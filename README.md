@@ -179,3 +179,7 @@ The current implementation uses browser `fetch()` requests in the application an
 ## Related project
 
 The API and computer-vision services are documented in the [CrowdVision AI Backend repository](https://github.com/refino17/crowdvision-backend).
+
+## Live Demo
+
+Watch the [CrowdVision AI live demo](docs/demo/crowdvision-live-demo.mp4) to see the platform during crowd monitoring.

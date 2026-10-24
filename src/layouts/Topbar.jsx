@@ -68,12 +68,12 @@ export default function Topbar({
         </button>
 
         <div className="mobile-command-copy" aria-label={`${pageLabel} page`}>
-          <span>CrowdVision AI</span>
+          <span>CrowdDetection System</span>
           <strong>{pageLabel}</strong>
         </div>
 
         <div className="topbar-title command-title-block">
-          <p className="section-kicker">CrowdVision AI Platform</p>
+          <p className="section-kicker">CrowdDetection System Platform</p>
           <h1>Real-Time Crowd Safety Intelligence</h1>
           <span className="topbar-context">{pageLabel}</span>
         </div>
@@ -116,7 +116,7 @@ export default function Topbar({
         <Link
           to="/"
           className="theme-orb command-orb"
-          aria-label="Open CrowdVision launch screen"
+          aria-label="Open CrowdDetection System launch screen"
         />
 
         <div className="command-time" title="Last dashboard refresh time">

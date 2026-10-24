@@ -183,3 +183,4 @@ The API and computer-vision services are documented in the [CrowdVision AI Backe
 ## Live Demo
 
 Watch the [CrowdVision AI live demo](docs/demo/crowdvision-live-demo.mp4) to see the platform during crowd monitoring.
+# crowd-detection-fe

@@ -256,10 +256,10 @@ function RemoteCameraCard({ camera, busyAction = "", onStopCamera, onOpenPreview
       </div>
 
       <div className="edge-worker-grid">
-        <EdgeMetric label={peopleLabel} value={camera?.people ?? camera?.total_people ?? 0} tone="green" />
+        <EdgeMetric label={peopleLabel} value={camera?.people ?? camera?.total_people ?? 0} tone="#3478F6" />
         <EdgeMetric label={crowdLabel} value={camera?.density || "Unknown"} tone={densityTone} />
-        <EdgeMetric label="Camera Status" value={connectionLabel(camera)} tone={online ? "green" : processRunning ? "yellow" : "default"} />
-        <EdgeMetric label="AI Analysis" value={analysisStatus(camera)} tone={camera?.metadata?.detect_enabled ? "purple" : "default"} />
+        <EdgeMetric label="Camera Status" value={connectionLabel(camera)} tone={online ? "#3478F6" : processRunning ? "#3478F6" : "default"} />
+        <EdgeMetric label="AI Analysis" value={analysisStatus(camera)} tone={camera?.metadata?.detect_enabled ? "#3478F6" : "default"} />
       </div>
 
       <div className="edge-worker-integrity">
@@ -524,12 +524,12 @@ function RemoteCameraNetwork({ fetchDashboardData }) {
         </div>
 
         <div className="edge-summary-grid">
-          <EdgeMetric label="Total Cameras" value={totalCameras} tone="cyan" />
-          <EdgeMetric label="Online Cameras" value={onlineCameras} tone="green" />
-          <EdgeMetric label="Offline Cameras" value={offlineCameras} tone="yellow" />
-          <EdgeMetric label="Active Camera Sessions" value={activeCameraSessions} tone="green" />
-          <EdgeMetric label="AI-Enabled Cameras" value={aiEnabledCameras} tone="purple" />
-          <EdgeMetric label="Active Camera Alerts" value={activeCameraAlerts} tone={activeCameraAlerts ? "critical" : "green"} />
+          <EdgeMetric label="Total Cameras" value={totalCameras} tone="#3478F6" />
+          <EdgeMetric label="Online Cameras" value={onlineCameras} tone="#3478F6" />
+          <EdgeMetric label="Offline Cameras" value={offlineCameras} tone="#3478F6" />
+          <EdgeMetric label="Active Camera Sessions" value={activeCameraSessions} tone="#3478F6" />
+          <EdgeMetric label="AI-Enabled Cameras" value={aiEnabledCameras} tone="#3478F6" />
+          <EdgeMetric label="Active Camera Alerts" value={activeCameraAlerts} tone={activeCameraAlerts ? "critical" : "#3478F6"} />
           <EdgeMetric label="Last Camera Update" value={lastCameraUpdate || "Waiting"} tone="default" />
         </div>
 
@@ -591,9 +591,9 @@ function RemoteCameraNetwork({ fetchDashboardData }) {
             </div>
 
             <div className="edge-preview-modal-metrics">
-              <EdgeMetric label={activeSelectedCamera?.online ? "People Detected" : "Last Detected"} value={activeSelectedCamera?.people ?? 0} tone="green" />
+              <EdgeMetric label={activeSelectedCamera?.online ? "People Detected" : "Last Detected"} value={activeSelectedCamera?.people ?? 0} tone="#3478F6" />
               <EdgeMetric label={activeSelectedCamera?.online ? "Crowd Level" : "Last Crowd Level"} value={activeSelectedCamera?.density || "Unknown"} tone={String(activeSelectedCamera?.density || "unknown").toLowerCase()} />
-              <EdgeMetric label="Camera Signal" value={activeSelectedCamera?.camera_health?.signal_quality || "Waiting"} tone="cyan" />
+              <EdgeMetric label="Camera Signal" value={activeSelectedCamera?.camera_health?.signal_quality || "Waiting"} tone="#3478F6" />
               <EdgeMetric label="Last Update" value={formatAge(activeSelectedCamera?.age_seconds)} tone="default" />
             </div>
           </div>
@@ -657,7 +657,7 @@ export default function SourcesPage({ data = {} }) {
         <p className="section-kicker">Camera Operations</p>
         <h1>Camera Network</h1>
         <p>
-          Choose the main camera for full CrowdVision analysis and manage optional remote cameras
+          Choose the main camera for full CrowdDetection System analysis and manage optional remote cameras
           that can report to the command center at the same time.
         </p>
       </section>
@@ -669,7 +669,7 @@ export default function SourcesPage({ data = {} }) {
             <p className="section-kicker">Primary Analysis</p>
             <h2>Main Monitoring Source</h2>
             <p>
-              One selected camera receives the complete CrowdVision intelligence pipeline:
+              One selected camera receives the complete CrowdDetection System intelligence pipeline:
               advanced detection, tracking, zones, incidents, anomalies, evidence, and reports.
             </p>
           </div>
@@ -704,7 +704,7 @@ export default function SourcesPage({ data = {} }) {
           <div><strong>Phone Camera</strong><p>Use a phone camera app and paste its approved video URL.</p></div>
           <div><strong>USB Camera</strong><p>Use device index 1 or 2. The laptop webcam is usually index 0.</p></div>
           <div><strong>CCTV / Drone</strong><p>Use an RTSP or stream URL from the camera, recorder, or controller.</p></div>
-          <div><strong>Video File</strong><p>Upload a supported video and select it for full CrowdVision analysis.</p></div>
+          <div><strong>Video File</strong><p>Upload a supported video and select it for full CrowdDetection System analysis.</p></div>
         </div>
 
         <div className="source-builder">

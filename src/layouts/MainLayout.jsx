@@ -66,7 +66,7 @@ export default function MainLayout({
   const [mobileNavigationOpen, setMobileNavigationOpen] = useState(false);
 
   useEffect(() => {
-    document.title = `CrowdVision AI | ${pageTitle}`;
+    document.title = `CrowdDetection System | ${pageTitle}`;
   }, [pageTitle]);
 
   useEffect(() => {

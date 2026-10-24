@@ -1,11 +1,11 @@
 /* CrowdVision AI V46 — Security, Telegram Alerts & Audit Center */
-.page-audit { --accent: #2cd7e7; --accent-2: #8b6dff; --accent-soft: rgba(44, 215, 231, .13); }
+.page-audit { --accent: #2c7ae7; --accent-2: #398cff; --accent-soft: rgba(44, 122, 231, .13); }
 
 .audit-hero-panel {
   background:
-    radial-gradient(circle at 10% 0%, rgba(44, 215, 231, .15), transparent 38%),
-    radial-gradient(circle at 96% 12%, rgba(139, 109, 255, .14), transparent 34%),
-    linear-gradient(145deg, rgba(13, 26, 27, .96), rgba(6, 10, 14, .98));
+    radial-gradient(circle at 10% 0%, rgba(44, 122, 231, .15), transparent 38%),
+    radial-gradient(circle at 96% 12%, rgba(109, 170, 255, .14), transparent 34%),
+    linear-gradient(145deg, rgba(12, 18, 27, .96), rgba(6, 10, 14, .98));
 }
 
 .audit-summary-grid .card strong {
@@ -35,7 +35,7 @@
   grid-template-columns: minmax(130px, .75fr) minmax(0, 1.25fr);
   gap: 16px;
   align-items: center;
-  border-bottom: 1px solid rgba(255,255,255,.075);
+  border-bottom: 1px solid rgba(255, 255, 255, .075);
 }
 
 .audit-detail-list p:last-child {
@@ -61,18 +61,18 @@
   margin-top: 18px;
   padding: 15px 17px;
   border-radius: 16px;
-  color: #dff8ea;
-  background: color-mix(in srgb, var(--accent) 12%, rgba(255,255,255,.04));
-  border: 1px solid color-mix(in srgb, var(--accent) 24%, rgba(255,255,255,.08));
+  color: #70a8f8;
+  background: color-mix(in srgb, var(--accent) 12%, rgba(255, 255, 255, .04));
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, rgba(255, 255, 255, .08));
   line-height: 1.45;
   font-weight: 800;
 }
 
 .audit-note-box.warning,
 .audit-message.warning {
-  color: #ffe6bd;
-  background: rgba(246, 184, 63, .12);
-  border-color: rgba(246, 184, 63, .28);
+  color: #73adff;
+  background: rgba(63, 139, 246, .12);
+  border-color: rgba(63, 139, 246, .28);
 }
 
 .audit-actions-row {
@@ -112,7 +112,7 @@
   max-height: 760px;
   overflow: auto;
   border-radius: 20px;
-  border: 1px solid rgba(255,255,255,.08);
+  border: 1px solid rgba(255, 255, 255, .08);
   background: rgba(2, 6, 5, .32);
 }
 
@@ -125,7 +125,7 @@
 .audit-table th,
 .audit-table td {
   padding: 15px 16px;
-  border-bottom: 1px solid rgba(255,255,255,.07);
+  border-bottom: 1px solid rgba(255, 255, 255, .07);
   text-align: left;
   vertical-align: top;
 }
@@ -148,7 +148,7 @@
 }
 
 .audit-table td strong {
-  color: #fff;
+  color: #ffffff;
 }
 
 .audit-empty {

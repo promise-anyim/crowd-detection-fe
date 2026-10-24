@@ -11,11 +11,11 @@
 }
 
 .edge-command-panel {
-  border-color: color-mix(in srgb, var(--accent) 30%, rgba(255,255,255,.1));
+  border-color: color-mix(in srgb, var(--accent) 30%, rgba(255, 255, 255, .1));
   background:
     radial-gradient(circle at 0% 0%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 42%),
-    radial-gradient(circle at 100% 0%, rgba(246, 184, 63, .1), transparent 36%),
-    linear-gradient(145deg, rgba(15, 28, 24, .94), rgba(4, 9, 8, .98));
+    radial-gradient(circle at 100% 0%, rgba(63, 139, 246, .1), transparent 36%),
+    linear-gradient(145deg, rgba(13, 19, 28, .94), rgba(4, 9, 8, .98));
 }
 
 .edge-command-copy {
@@ -40,8 +40,8 @@
   padding: 0 13px;
   border-radius: 999px;
   color: var(--text);
-  background: rgba(255,255,255,.055);
-  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255, 255, 255, .055);
+  border: 1px solid rgba(255, 255, 255, .1);
   font-size: 12px;
   font-weight: 950;
   white-space: nowrap;
@@ -49,20 +49,20 @@
 
 .edge-badge.tone-online {
   color: var(--success);
-  background: rgba(32, 223, 152, .11);
-  border-color: rgba(32, 223, 152, .34);
+  background: rgba(32, 112, 223, .11);
+  border-color: rgba(32, 112, 223, .34);
 }
 
 .edge-badge.tone-offline {
   color: var(--danger);
-  background: rgba(255, 77, 95, .11);
-  border-color: rgba(255, 77, 95, .34);
+  background: rgba(77, 151, 255, .11);
+  border-color: rgba(77, 151, 255, .34);
 }
 
 .edge-badge.tone-ai {
-  color: var(--cyan);
-  background: rgba(44, 215, 231, .1);
-  border-color: rgba(44, 215, 231, .32);
+  color: var(--accent);
+  background: rgba(44, 122, 231, .1);
+  border-color: rgba(44, 122, 231, .32);
 }
 
 .edge-summary-grid {
@@ -82,7 +82,7 @@
   border-radius: 18px;
   background:
     linear-gradient(145deg, rgba(2, 7, 5, .66), rgba(12, 20, 16, .82));
-  border: 1px solid rgba(255,255,255,.085);
+  border: 1px solid rgba(255, 255, 255, .085);
 }
 
 .edge-metric span {
@@ -100,23 +100,23 @@
   overflow-wrap: anywhere;
 }
 
-.edge-metric.tone-green strong,
+.edge-metric.tone-success strong,
 .edge-metric.tone-low strong {
   color: var(--success);
 }
 
-.edge-metric.tone-cyan strong {
-  color: var(--cyan);
+.edge-metric.tone-success strong {
+  color: var(--accent);
 }
 
-.edge-metric.tone-purple strong {
-  color: var(--purple);
+.edge-metric.tone-success strong {
+  color: var(--accent);
 }
 
-.edge-metric.tone-yellow strong,
+.edge-metric.tone-success strong,
 .edge-metric.tone-medium strong,
 .edge-metric.tone-high strong {
-  color: var(--gold);
+  color: var(--accent-2);
 }
 
 .edge-metric.tone-critical strong {
@@ -135,27 +135,27 @@
   gap: 14px;
   padding: 18px;
   border-radius: 22px;
-  border: 1px solid rgba(255,255,255,.1);
+  border: 1px solid rgba(255, 255, 255, .1);
   background:
-    radial-gradient(circle at 0% 0%, rgba(255,255,255,.045), transparent 44%),
+    radial-gradient(circle at 0% 0%, rgba(255, 255, 255, .045), transparent 44%),
     linear-gradient(145deg, rgba(5, 12, 9, .86), rgba(14, 23, 19, .88));
-  box-shadow: 0 18px 44px rgba(0,0,0,.24);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, .24);
 }
 
 .edge-worker-card.online {
-  border-color: rgba(32, 223, 152, .30);
+  border-color: rgba(32, 112, 223, .30);
 }
 
 .edge-worker-card.offline {
-  border-color: rgba(255, 138, 43, .22);
+  border-color: rgba(43, 131, 255, .22);
   opacity: .82;
 }
 
 .edge-worker-card.tamper {
-  border-color: rgba(255, 77, 95, .44);
+  border-color: rgba(77, 151, 255, .44);
   background:
-    radial-gradient(circle at 100% 0%, rgba(255, 77, 95, .12), transparent 40%),
-    linear-gradient(145deg, rgba(24, 11, 13, .88), rgba(9, 13, 11, .92));
+    radial-gradient(circle at 100% 0%, rgba(77, 151, 255, .12), transparent 40%),
+    linear-gradient(145deg, rgba(11, 16, 24, .88), rgba(9, 13, 11, .92));
 }
 
 .edge-worker-card-head {
@@ -177,7 +177,7 @@
 
 .edge-worker-card-head h3 {
   margin: 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
   line-height: 1.1;
   overflow-wrap: anywhere;
@@ -195,8 +195,8 @@
   justify-content: space-between;
   gap: 14px;
   padding: 12px 0;
-  border-top: 1px solid rgba(255,255,255,.075);
-  border-bottom: 1px solid rgba(255,255,255,.075);
+  border-top: 1px solid rgba(255, 255, 255, .075);
+  border-bottom: 1px solid rgba(255, 255, 255, .075);
 }
 
 .edge-worker-source-row span,
@@ -241,16 +241,16 @@
   gap: 6px;
   padding: 12px;
   border-radius: 15px;
-  background: rgba(0,0,0,.22);
-  border: 1px solid rgba(255,255,255,.065);
+  background: rgba(0, 0, 0, .22);
+  border: 1px solid rgba(255, 255, 255, .065);
 }
 
 .edge-worker-message {
   padding: 13px 15px;
   border-radius: 15px;
-  color: rgba(255,255,255,.86);
-  background: color-mix(in srgb, var(--accent) 10%, rgba(255,255,255,.035));
-  border: 1px solid color-mix(in srgb, var(--accent) 20%, rgba(255,255,255,.08));
+  color: rgba(255, 255, 255, .86);
+  background: color-mix(in srgb, var(--accent) 10%, rgba(255, 255, 255, .035));
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, rgba(255, 255, 255, .08));
   line-height: 1.45;
   font-weight: 800;
 }
@@ -268,16 +268,16 @@
   align-items: center;
   padding: 0 10px;
   border-radius: 999px;
-  background: rgba(255,255,255,.055);
-  border: 1px solid rgba(255,255,255,.075);
+  background: rgba(255, 255, 255, .055);
+  border: 1px solid rgba(255, 255, 255, .075);
 }
 
 .edge-empty-state,
 .edge-error-box {
   padding: 22px;
   border-radius: 20px;
-  background: rgba(0,0,0,.24);
-  border: 1px dashed rgba(255,255,255,.16);
+  background: rgba(0, 0, 0, .24);
+  border: 1px dashed rgba(255, 255, 255, .16);
   color: var(--muted);
 }
 
@@ -297,9 +297,9 @@
 }
 
 .edge-error-box {
-  color: #ffd0d6;
-  border-color: rgba(255, 77, 95, .3);
-  background: rgba(255, 77, 95, .1);
+  color: #73adff;
+  border-color: rgba(77, 151, 255, .3);
+  background: rgba(77, 151, 255, .1);
 }
 
 @media (max-width: 1280px) {
@@ -344,15 +344,15 @@
 
 .edge-secondary-button {
   color: var(--accent) !important;
-  background: rgba(32, 223, 152, .1) !important;
-  border: 1px solid rgba(32, 223, 152, .32) !important;
+  background: rgba(32, 112, 223, .1) !important;
+  border: 1px solid rgba(32, 112, 223, .32) !important;
   box-shadow: none !important;
 }
 
 .edge-danger-button {
-  color: #ff9aa6 !important;
-  background: rgba(255, 77, 95, .12) !important;
-  border: 1px solid rgba(255, 77, 95, .34) !important;
+  color: #73adff !important;
+  background: rgba(77, 151, 255, .12) !important;
+  border: 1px solid rgba(77, 151, 255, .34) !important;
   box-shadow: none !important;
 }
 
@@ -360,17 +360,17 @@
   margin: 0 0 16px;
   padding: 14px 16px;
   border-radius: 16px;
-  color: #dff8ea;
-  background: rgba(32, 223, 152, .1);
-  border: 1px solid rgba(32, 223, 152, .26);
+  color: #70a8f8;
+  background: rgba(32, 112, 223, .1);
+  border: 1px solid rgba(32, 112, 223, .26);
   font-weight: 850;
   line-height: 1.45;
 }
 
 .edge-worker-card.process-running {
   box-shadow:
-    0 18px 44px rgba(0,0,0,.24),
-    0 0 34px rgba(32, 223, 152, .10);
+    0 18px 44px rgba(0, 0, 0, .24),
+    0 0 34px rgba(32, 112, 223, .10);
 }
 
 .edge-worker-control-row {
@@ -419,13 +419,13 @@
   align-items: start;
   padding: 13px;
   border-radius: 16px;
-  background: rgba(0,0,0,.22);
-  border: 1px solid rgba(255,255,255,.075);
+  background: rgba(0, 0, 0, .22);
+  border: 1px solid rgba(255, 255, 255, .075);
 }
 
 .edge-how-it-works > div:last-child {
-  border-color: rgba(246, 184, 63, .28);
-  background: rgba(246, 184, 63, .075);
+  border-color: rgba(63, 139, 246, .28);
+  background: rgba(63, 139, 246, .075);
 }
 
 .edge-how-it-works span {
@@ -459,11 +459,11 @@
   padding: 0;
   overflow: hidden;
   border-radius: 17px;
-  border: 1px solid rgba(255,255,255,.10) !important;
+  border: 1px solid rgba(255, 255, 255, .10) !important;
   background:
-    radial-gradient(circle at 50% 0%, rgba(32,223,152,.12), transparent 48%),
+    radial-gradient(circle at 50% 0%, rgba(32, 112, 223, .12), transparent 48%),
     #010403 !important;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.025) !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .025) !important;
   cursor: zoom-in;
 }
 
@@ -475,7 +475,7 @@
 .edge-preview-shell:hover:not(:disabled) {
   transform: none;
   filter: none;
-  border-color: rgba(32,223,152,.38) !important;
+  border-color: rgba(32, 112, 223, .38) !important;
 }
 
 .edge-preview-image {
@@ -485,7 +485,7 @@
   height: 100%;
   max-width: none;
   object-fit: cover;
-  background: #000;
+  background: #000000;
 }
 
 .edge-preview-shell.is-last-frame .edge-preview-image {
@@ -525,9 +525,9 @@
   min-height: 30px;
   padding: 0 11px;
   border-radius: 999px;
-  color: #fff;
-  background: rgba(0,0,0,.66);
-  border: 1px solid rgba(255,255,255,.12);
+  color: #ffffff;
+  background: rgba(0, 0, 0, .66);
+  border: 1px solid rgba(255, 255, 255, .12);
   backdrop-filter: blur(12px);
   font-size: 10px;
   letter-spacing: .08em;
@@ -538,13 +538,13 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--gold);
-  box-shadow: 0 0 12px rgba(246,184,63,.58);
+  background: var(--accent-2);
+  box-shadow: 0 0 12px rgba(63, 139, 246, .58);
 }
 
 .edge-preview-dot.live {
   background: var(--success);
-  box-shadow: 0 0 14px rgba(32,223,152,.72);
+  box-shadow: 0 0 14px rgba(32, 112, 223, .72);
   animation: cv-pulse 1.6s ease-in-out infinite;
 }
 
@@ -573,7 +573,7 @@
   display: grid;
   place-items: center;
   padding: 24px;
-  background: rgba(0,0,0,.88);
+  background: rgba(0, 0, 0, .88);
   backdrop-filter: blur(16px);
 }
 
@@ -585,11 +585,11 @@
   padding: 18px;
   overflow: auto;
   border-radius: 26px;
-  border: 1px solid rgba(32,223,152,.32);
+  border: 1px solid rgba(32, 112, 223, .32);
   background:
-    radial-gradient(circle at 0% 0%, rgba(32,223,152,.12), transparent 38%),
-    linear-gradient(145deg, rgba(10,18,15,.98), rgba(2,6,5,.98));
-  box-shadow: 0 38px 120px rgba(0,0,0,.72);
+    radial-gradient(circle at 0% 0%, rgba(32, 112, 223, .12), transparent 38%),
+    linear-gradient(145deg, rgba(10, 18, 15, .98), rgba(2, 6, 5, .98));
+  box-shadow: 0 38px 120px rgba(0, 0, 0, .72);
 }
 
 .edge-preview-modal-head {
@@ -610,7 +610,7 @@
 
 .edge-preview-modal-head h2 {
   margin: 0;
-  color: #fff;
+  color: #ffffff;
 }
 
 .edge-preview-modal-stage {
@@ -621,8 +621,8 @@
   display: grid;
   place-items: center;
   border-radius: 20px;
-  background: #000;
-  border: 1px solid rgba(255,255,255,.10);
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, .10);
 }
 
 .edge-preview-modal-stage img {
@@ -630,7 +630,7 @@
   height: 100%;
   max-height: 68vh;
   object-fit: contain;
-  background: #000;
+  background: #000000;
 }
 
 .edge-preview-modal-live {
@@ -643,8 +643,8 @@
   min-height: 36px;
   padding: 0 14px;
   border-radius: 999px;
-  background: rgba(0,0,0,.7);
-  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0, 0, 0, .7);
+  border: 1px solid rgba(255, 255, 255, .12);
   backdrop-filter: blur(12px);
   font-size: 11px;
   font-weight: 950;

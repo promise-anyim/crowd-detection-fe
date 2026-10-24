@@ -1,0 +1,174 @@
+/* CROWD DETECTION SYSTEM — GLOBAL BLACK & BLUE THEME */
+
+:root {
+  color-scheme: dark;
+
+  --bg: #05070B !important;
+  --bg-2: #080E16 !important;
+  --panel: #0B1420 !important;
+  --panel-2: #101C2D !important;
+  --panel-3: #15243A !important;
+
+  --accent: #3485F6 !important;
+  --accent-2: #73ADFF !important;
+  --accent: #73ADFF !important;
+  --accent: #3485F6 !important;
+  --accent-2: #73ADFF !important;
+  --success: #3485F6 !important;
+  --danger: #73ADFF !important;
+
+  --border: #223653 !important;
+  --border-strong: #31507C !important;
+  --text: #73ADFF !important;
+  --text-secondary: #6699E2 !important;
+  --text-muted: #527CB7 !important;
+}
+
+/* Base application */
+html,
+body,
+#root {
+  background: #05070B !important;
+  color: #73ADFF !important;
+}
+
+body {
+  color-scheme: dark;
+}
+
+/* Common application surfaces */
+[class*="sidebar"],
+[class*="topbar"],
+[class*="navbar"],
+[class*="header"],
+[class*="panel"],
+[class*="card"],
+[class*="widget"],
+[class*="modal"],
+[class*="dialog"],
+[class*="dropdown"],
+[class*="popover"],
+[class*="menu"],
+[class*="table-container"],
+[class*="chart-container"],
+[class*="camera-card"],
+[class*="camera-tile"],
+[class*="stat-card"],
+[class*="statCard"],
+[class*="section-head"],
+[class*="sectionHead"] {
+  border-color: #223653 !important;
+}
+
+/* Remove #3478F6/#3478F6/#3478F6/#3478F6 decorative treatments from
+   semantic status and alert components. Underlying status data
+   and incident severity values are not modified. */
+[class*="success"],
+[class*="danger"],
+[class*="error"],
+[class*="critical"],
+[class*="warning"],
+[class*="healthy"],
+[class*="online"],
+[class*="offline"],
+[class*="status"],
+[class*="severity"],
+[class*="incident-badge"],
+[class*="alert-badge"],
+[class*="badge"] {
+  border-color: #31507C !important;
+  box-shadow: none;
+}
+
+/* Navigation and selected states */
+[class*="active"],
+[aria-current="page"],
+[aria-selected="true"] {
+  border-color: #3485F6 !important;
+}
+
+/* Buttons and interactive controls */
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"] {
+  border-color: #31507C;
+}
+
+button:hover,
+[role="button"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  border-color: #3485F6 !important;
+}
+
+/* Form controls */
+input,
+select,
+textarea {
+  color: #73ADFF !important;
+  border-color: #31507C !important;
+  accent-color: #3485F6 !important;
+}
+
+/* Tables */
+table th {
+  background-color: #101C2D !important;
+  color: #73ADFF !important;
+  border-color: #223653 !important;
+}
+
+table td {
+  border-color: #223653 !important;
+}
+
+/* Charts: Recharts and common SVG chart primitives */
+.recharts-cartesian-grid line {
+  stroke: #223653 !important;
+}
+
+.recharts-cartesian-axis-line,
+.recharts-cartesian-axis-tick-line {
+  stroke: #31507C !important;
+}
+
+.recharts-cartesian-axis-tick-value,
+.recharts-legend-item-text {
+  fill: #6699E2 !important;
+  color: #6699E2 !important;
+}
+
+.recharts-line-curve,
+.recharts-area,
+.recharts-dot,
+.recharts-reference-line line {
+  stroke: #3485F6 !important;
+}
+
+.recharts-bar-rectangle,
+.recharts-tooltip-cursor {
+  fill: #3485F6 !important;
+}
+
+/* Progress indicators */
+progress,
+input[type="range"] {
+  accent-color: #3485F6 !important;
+}
+
+/* Scrollbars */
+* {
+  scrollbar-color: #31507C #080E16;
+}
+
+/* Consistent keyboard focus */
+:focus-visible {
+  outline-color: #73ADFF !important;
+}
+
+/* Avoid decorative color filters and colored shadows */
+[class*="glow"],
+[class*="neon"],
+[class*="gradient"] {
+  box-shadow: none;
+}

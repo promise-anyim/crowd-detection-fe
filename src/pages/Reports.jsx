@@ -264,7 +264,7 @@ export default function ReportsPage({ data }) {
 
   const hasReports = sortedReports.length > 0;
   const selectedType = normalizeReportType(activeReport?.type, activeReport?.filename);
-  const readableSource = safeValue(activeDetails.cameraProfile, "CrowdVision");
+  const readableSource = safeValue(activeDetails.cameraProfile, "CrowdDetection System");
   const loading = isOpening || activeDetails.isLoading;
 
   return (
@@ -282,7 +282,7 @@ export default function ReportsPage({ data }) {
         <StatCard label="Total Reports" value={reportStats.total} />
         <StatCard label="Incident Records" value={reportStats.incidents} variant="warning" />
         <StatCard label="Anomaly Records" value={reportStats.anomalies} variant="danger" />
-        <StatCard label="Camera Integrity" value={reportStats.cameraIntegrity} variant="cyan" />
+        <StatCard label="Camera Integrity" value={reportStats.cameraIntegrity} variant="#3478F6" />
       </section>
 
       <section className="panel report-console-shell">
@@ -290,7 +290,7 @@ export default function ReportsPage({ data }) {
           <div>
             <p className="section-kicker">Evidence Desk</p>
             <h2>Investigation Registry</h2>
-            <span>Search, inspect, preview, and export generated CrowdVision evidence records.</span>
+            <span>Search, inspect, preview, and export generated CrowdDetection System evidence records.</span>
             <small className="v44-report-latest">Latest generated: {reportStats.latest}</small>
           </div>
           <button type="button" className="report-console-refresh" onClick={fetchDashboardData}>Refresh Reports</button>
@@ -329,7 +329,7 @@ export default function ReportsPage({ data }) {
         {!hasReports ? (
           <div className="report-console-empty">
             <strong>No reports yet.</strong>
-            <span>Start monitoring. CrowdVision will create reports when safety events or camera-integrity issues are recorded.</span>
+            <span>Start monitoring. CrowdDetection System will create reports when safety events or camera-integrity issues are recorded.</span>
           </div>
         ) : (
           <div className="report-console-workbench">

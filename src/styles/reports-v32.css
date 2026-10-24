@@ -8,8 +8,8 @@
   min-height: 260px;
   background:
     linear-gradient(145deg, rgba(16, 25, 18, .95), rgba(3, 7, 4, .99)),
-    radial-gradient(circle at 18% 8%, color-mix(in srgb, var(--gold, #f6b83f) 22%, transparent), transparent 44%),
-    radial-gradient(circle at 84% 0%, color-mix(in srgb, var(--accent, #20df98) 14%, transparent), transparent 45%) !important;
+    radial-gradient(circle at 18% 8%, color-mix(in srgb, var(--accent-2, #73ADFF) 22%, transparent), transparent 44%),
+    radial-gradient(circle at 84% 0%, color-mix(in srgb, var(--accent, #398cff) 14%, transparent), transparent 45%) !important;
 }
 
 .report-console-stats .card {
@@ -28,8 +28,8 @@
   overflow: hidden !important;
   background:
     linear-gradient(145deg, rgba(12, 20, 14, .96), rgba(3, 8, 5, .99)),
-    radial-gradient(circle at 0 0, color-mix(in srgb, var(--accent, #20df98) 10%, transparent), transparent 52%),
-    radial-gradient(circle at 100% 0, color-mix(in srgb, var(--gold, #f6b83f) 9%, transparent), transparent 42%) !important;
+    radial-gradient(circle at 0 0, color-mix(in srgb, var(--accent, #398cff) 10%, transparent), transparent 52%),
+    radial-gradient(circle at 100% 0, color-mix(in srgb, var(--accent-2, #73ADFF) 9%, transparent), transparent 42%) !important;
 }
 
 .report-console-heading {
@@ -43,7 +43,7 @@
 
 .report-console-heading h2 {
   margin: 4px 0 8px;
-  color: #fff;
+  color: #ffffff;
   font-size: clamp(28px, 2vw, 42px);
   line-height: .95;
   letter-spacing: -.065em;
@@ -59,7 +59,7 @@
 .report-console-action-card span,
 .report-console-document-head span,
 .report-console-empty span {
-  color: color-mix(in srgb, var(--muted, #9aa8a1) 88%, #fff 12%);
+  color: color-mix(in srgb, var(--muted, #4c72a8) 88%, #ffffff 12%);
 }
 
 .report-console-refresh,
@@ -79,10 +79,10 @@
   font-weight: 950;
   text-decoration: none;
   cursor: pointer;
-  background: linear-gradient(135deg, var(--accent, #20df98), var(--gold, #f6b83f));
+  background: linear-gradient(135deg, var(--accent, #398cff), var(--accent-2, #73ADFF));
   box-shadow:
-    0 14px 34px color-mix(in srgb, var(--accent, #20df98) 18%, transparent),
-    inset 0 1px rgba(255,255,255,.45);
+    0 14px 34px color-mix(in srgb, var(--accent, #398cff) 18%, transparent),
+    inset 0 1px rgba(255, 255, 255, .45);
   transition: transform .18s ease, filter .18s ease, box-shadow .18s ease;
 }
 
@@ -97,9 +97,9 @@
 
 .report-console-record-actions .pdf-link,
 .report-console-downloads .pdf-link {
-  color: #fff;
-  background: linear-gradient(135deg, rgba(255, 77, 95, .94), rgba(246, 184, 63, .90));
-  box-shadow: 0 14px 30px rgba(255, 77, 95, .16), inset 0 1px rgba(255,255,255,.32);
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(77, 151, 255, .94), rgba(63, 139, 246, .90));
+  box-shadow: 0 14px 30px rgba(77, 151, 255, .16), inset 0 1px rgba(255, 255, 255, .32);
 }
 
 .report-console-toolbar {
@@ -130,16 +130,16 @@
   width: 100%;
   min-height: 54px;
   border-radius: 18px;
-  border: 1px solid rgba(255,255,255,.10);
-  background: rgba(0,0,0,.34);
-  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .10);
+  background: rgba(0, 0, 0, .34);
+  color: #ffffff;
   padding: 0 18px;
   outline: none;
 }
 
 .report-console-search input:focus {
-  border-color: color-mix(in srgb, var(--accent, #20df98) 58%, rgba(255,255,255,.12));
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent, #20df98) 13%, transparent);
+  border-color: color-mix(in srgb, var(--accent, #398cff) 58%, rgba(255, 255, 255, .12));
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent, #398cff) 13%, transparent);
 }
 
 .report-console-filters {
@@ -147,8 +147,8 @@
   gap: 8px;
   padding: 7px;
   border-radius: 20px;
-  background: rgba(0,0,0,.30);
-  border: 1px solid rgba(255,255,255,.09);
+  background: rgba(0, 0, 0, .30);
+  border: 1px solid rgba(255, 255, 255, .09);
 }
 
 .report-console-filters button {
@@ -159,20 +159,20 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: color-mix(in srgb, var(--muted, #9aa8a1) 88%, #fff 12%);
+  color: color-mix(in srgb, var(--muted, #4c72a8) 88%, #ffffff 12%);
   background: transparent;
   box-shadow: none;
   cursor: pointer;
 }
 
 .report-console-filters button strong {
-  color: #fff;
+  color: #ffffff;
 }
 
 .report-console-filters button.active {
   color: #061009;
-  background: linear-gradient(135deg, var(--accent, #20df98), var(--gold, #f6b83f));
-  box-shadow: 0 10px 24px color-mix(in srgb, var(--accent, #20df98) 16%, transparent);
+  background: linear-gradient(135deg, var(--accent, #398cff), var(--accent-2, #73ADFF));
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--accent, #398cff) 16%, transparent);
 }
 
 .report-console-filters button.active strong {
@@ -196,9 +196,9 @@
   border-radius: 28px;
   background:
     linear-gradient(145deg, rgba(10, 17, 12, .96), rgba(2, 6, 4, .98)),
-    radial-gradient(circle at 0 0, color-mix(in srgb, var(--gold, #f6b83f) 8%, transparent), transparent 52%);
-  border: 1px solid rgba(255,255,255,.095);
-  box-shadow: 0 22px 70px rgba(0,0,0,.24), inset 0 1px rgba(255,255,255,.045);
+    radial-gradient(circle at 0 0, color-mix(in srgb, var(--accent-2, #73ADFF) 8%, transparent), transparent 52%);
+  border: 1px solid rgba(255, 255, 255, .095);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, .24), inset 0 1px rgba(255, 255, 255, .045);
 }
 
 .report-console-registry {
@@ -233,7 +233,7 @@
 .report-console-list-head strong {
   display: block;
   margin-top: 5px;
-  color: #fff;
+  color: #ffffff;
   font-size: 17px;
 }
 
@@ -263,7 +263,7 @@
 .report-console-list::-webkit-scrollbar-track,
 .report-console-preview::-webkit-scrollbar-track,
 .report-console-document pre::-webkit-scrollbar-track {
-  background: rgba(255,255,255,.04);
+  background: rgba(255, 255, 255, .04);
   border-radius: 999px;
 }
 
@@ -271,7 +271,7 @@
 .report-console-preview::-webkit-scrollbar-thumb,
 .report-console-document pre::-webkit-scrollbar-thumb {
   border-radius: 999px;
-  background: linear-gradient(180deg, var(--accent, #20df98), var(--gold, #f6b83f));
+  background: linear-gradient(180deg, var(--accent, #398cff), var(--accent-2, #73ADFF));
 }
 
 .report-console-record {
@@ -281,22 +281,22 @@
   border-radius: 22px;
   display: grid;
   gap: 13px;
-  background: rgba(255,255,255,.033);
-  border: 1px solid rgba(255,255,255,.08);
-  box-shadow: inset 0 1px rgba(255,255,255,.035);
+  background: rgba(255, 255, 255, .033);
+  border: 1px solid rgba(255, 255, 255, .08);
+  box-shadow: inset 0 1px rgba(255, 255, 255, .035);
   transition: transform .18s ease, border-color .18s ease, background .18s ease;
 }
 
 .report-console-record:hover {
   transform: translateY(-1px);
-  border-color: color-mix(in srgb, var(--accent, #20df98) 34%, rgba(255,255,255,.10));
+  border-color: color-mix(in srgb, var(--accent, #398cff) 34%, rgba(255, 255, 255, .10));
 }
 
 .report-console-record.selected {
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--gold, #f6b83f) 12%, transparent), rgba(255,255,255,.035));
-  border-color: color-mix(in srgb, var(--gold, #f6b83f) 58%, rgba(255,255,255,.12));
-  box-shadow: 0 0 0 1px color-mix(in srgb, var(--gold, #f6b83f) 18%, transparent), 0 16px 44px rgba(0,0,0,.24);
+    linear-gradient(135deg, color-mix(in srgb, var(--accent-2, #73ADFF) 12%, transparent), rgba(255, 255, 255, .035));
+  border-color: color-mix(in srgb, var(--accent-2, #73ADFF) 58%, rgba(255, 255, 255, .12));
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent-2, #73ADFF) 18%, transparent), 0 16px 44px rgba(0, 0, 0, .24);
 }
 
 .report-console-record::before {
@@ -307,12 +307,12 @@
   bottom: 18px;
   width: 3px;
   border-radius: 999px;
-  background: var(--gold, #f6b83f);
+  background: var(--accent-2, #73ADFF);
   opacity: .82;
 }
 
-.report-console-record.anomaly::before { background: var(--danger, #ff4d5f); }
-.report-console-record.incident::before { background: var(--gold, #f6b83f); }
+.report-console-record.anomaly::before { background: var(--danger, #4d97ff); }
+.report-console-record.incident::before { background: var(--accent-2, #73ADFF); }
 
 .report-console-record-main {
   min-width: 0;
@@ -328,7 +328,7 @@
 }
 
 .report-console-record-main strong {
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   line-height: 1.2;
   overflow-wrap: anywhere;
@@ -355,12 +355,12 @@
 .report-console-preview-top {
   align-items: flex-start;
   padding-bottom: 16px;
-  border-bottom: 1px solid rgba(255,255,255,.08);
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
 }
 
 .report-console-preview-top h2 {
   margin: 4px 0 7px;
-  color: #fff;
+  color: #ffffff;
   font-size: clamp(24px, 1.7vw, 36px);
   line-height: 1;
   letter-spacing: -.06em;
@@ -380,16 +380,16 @@
 .report-console-document {
   min-width: 0;
   border-radius: 18px;
-  background: rgba(255,255,255,.035);
-  border: 1px solid rgba(255,255,255,.08);
-  box-shadow: inset 0 1px rgba(255,255,255,.035);
+  background: rgba(255, 255, 255, .035);
+  border: 1px solid rgba(255, 255, 255, .08);
+  box-shadow: inset 0 1px rgba(255, 255, 255, .035);
 }
 
 .report-console-status-card {
   grid-column: 1 / -1;
   padding: 17px 18px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--gold, #f6b83f) 13%, transparent), rgba(255,255,255,.035));
-  border-color: color-mix(in srgb, var(--gold, #f6b83f) 35%, rgba(255,255,255,.08));
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-2, #73ADFF) 13%, transparent), rgba(255, 255, 255, .035));
+  border-color: color-mix(in srgb, var(--accent-2, #73ADFF) 35%, rgba(255, 255, 255, .08));
 }
 
 .report-console-status-card span,
@@ -398,7 +398,7 @@
 }
 
 .report-console-status-card span {
-  color: var(--muted, #9aa8a1);
+  color: var(--muted, #4c72a8);
   text-transform: uppercase;
   letter-spacing: .16em;
   font-weight: 950;
@@ -407,7 +407,7 @@
 
 .report-console-status-card strong {
   margin-top: 6px;
-  color: var(--gold, #f6b83f);
+  color: var(--accent-2, #73ADFF);
   font-size: 26px;
   letter-spacing: -.04em;
 }
@@ -419,7 +419,7 @@
 }
 
 .report-console-metric strong {
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.25;
   overflow-wrap: anywhere;
@@ -429,12 +429,12 @@
   padding: 18px;
   display: grid;
   gap: 8px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--gold, #f6b83f) 10%, transparent), rgba(255,255,255,.03));
-  border-color: color-mix(in srgb, var(--gold, #f6b83f) 26%, rgba(255,255,255,.08));
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-2, #73ADFF) 10%, transparent), rgba(255, 255, 255, .03));
+  border-color: color-mix(in srgb, var(--accent-2, #73ADFF) 26%, rgba(255, 255, 255, .08));
 }
 
 .report-console-action-card strong {
-  color: #fff;
+  color: #ffffff;
   font-size: 17px;
   line-height: 1.35;
 }
@@ -455,12 +455,12 @@
 .report-console-document-head {
   min-height: 52px;
   padding: 0 18px;
-  border-bottom: 1px solid rgba(255,255,255,.08);
-  background: rgba(0,0,0,.24);
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(0, 0, 0, .24);
 }
 
 .report-console-document-head strong {
-  color: var(--gold, #f6b83f);
+  color: var(--accent-2, #73ADFF);
   font-size: 13px;
 }
 
@@ -477,8 +477,8 @@
   font-size: 14px;
   line-height: 1.75;
   background:
-    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-    rgba(0,0,0,.30);
+    linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
+    rgba(0, 0, 0, .30);
   background-size: 100% 32px;
 }
 
@@ -492,14 +492,14 @@
   text-align: center;
   padding: 28px;
   border-radius: 22px;
-  color: var(--muted, #9aa8a1);
-  background: rgba(255,255,255,.035);
-  border: 1px dashed rgba(255,255,255,.14);
+  color: var(--muted, #4c72a8);
+  background: rgba(255, 255, 255, .035);
+  border: 1px dashed rgba(255, 255, 255, .14);
 }
 
 .report-console-empty strong,
 .report-console-preview-empty h2 {
-  color: #fff;
+  color: #ffffff;
 }
 
 .report-console-empty.small {
@@ -507,15 +507,15 @@
 }
 
 .badge.incident {
-  color: var(--gold, #f6b83f);
-  border-color: rgba(246,184,63,.38);
-  background: rgba(246,184,63,.12);
+  color: var(--accent-2, #73ADFF);
+  border-color: rgba(63, 139, 246, .38);
+  background: rgba(63, 139, 246, .12);
 }
 
 .badge.anomaly {
-  color: #ff7184;
-  border-color: rgba(255,77,95,.38);
-  background: rgba(255,77,95,.12);
+  color: #71acff;
+  border-color: rgba(77, 151, 255, .38);
+  background: rgba(77, 151, 255, .12);
 }
 
 @media (max-width: 1480px) {

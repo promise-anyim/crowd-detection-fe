@@ -82,7 +82,7 @@ export default function IncidentsPage({ data }) {
       <section className="cards-grid three-cards">
         <StatCard label="Incident Events" value={incidentSummary?.total_incident_events ?? 0} variant="warning" />
         <StatCard label="Longest Duration" value={`${incidentSummary?.longest_incident_duration ?? 0}s`} />
-        <StatCard label="Latest Recorded Zone" value={incidentSummary?.latest_danger_zone ?? "None"} variant="cyan" />
+        <StatCard label="Latest Recorded Zone" value={incidentSummary?.latest_danger_zone ?? "None"} variant="#3478F6" />
       </section>
 
       <section className={`panel ${hasActiveIncident ? "incident-active" : "incident-safe"}`}>

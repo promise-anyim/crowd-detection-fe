@@ -21,14 +21,14 @@ export default function LaunchPage({ data }) {
   return (
     <main className="launch-page">
       <section className="launch-hero">
-        <img src={heroImage} alt="CrowdVision AI security command center" className="launch-hero-image" />
+        <img src={heroImage} alt="CrowdDetection System security command center" className="launch-hero-image" />
         <div className="launch-shade" />
 
         <div className="launch-content">
           <div className="launch-brand-row">
-            <div className="launch-logo">CV</div>
+            
             <div>
-              <span>CrowdVision AI Platform</span>
+              <span>CrowdDetection System Platform</span>
               <strong>Security Command Intelligence</strong>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function LaunchPage({ data }) {
             <Link to="/monitoring" className="launch-secondary">Open Live Monitoring</Link>
           </div>
 
-          <div className="launch-status-grid" aria-label="CrowdVision system summary">
+          <div className="launch-status-grid" aria-label="CrowdDetection System system summary">
             <StatusItem label="System" value={data?.apiStatus === "online" ? "Ready" : "Checking"} tone="success" />
             <StatusItem label="Monitoring" value={running ? "Live" : "Paused"} tone={running ? "success" : "warning"} />
             <StatusItem label="Source" value={source} />

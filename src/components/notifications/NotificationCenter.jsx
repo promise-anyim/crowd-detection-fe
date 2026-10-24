@@ -10,7 +10,7 @@ function normalizeSeverity(value) {
 }
 
 function formatMeta(note) {
-  const source = note?.source || note?.camera_profile || "CrowdVision AI";
+  const source = note?.source || note?.camera_profile || "CrowdDetection System";
   const category = note?.category || note?.type || "system";
   return `${String(category).replaceAll("_", " ")} • ${source}`;
 }
@@ -25,7 +25,7 @@ function NotificationItem({ note, index }) {
     >
       <div>
         <div className="notification-title-row">
-          <strong>{note?.title || "CrowdVision Alert"}</strong>
+          <strong>{note?.title || "CrowdDetection System Alert"}</strong>
           <em>{formatMeta(note)}</em>
         </div>
         <p>{note?.message || "No extra detail supplied."}</p>

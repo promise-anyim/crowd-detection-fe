@@ -8,22 +8,22 @@ import {
   CartesianGrid,
 } from "recharts";
 
-export default function LinePanel({ title, data = [], lines = [], colors = ["#20df98"] }) {
+export default function LinePanel({ title, data = [], lines = [], colors = ["#398cff"] }) {
   return (
     <div className="panel chart-panel">
       <h2>{title}</h2>
       <ResponsiveContainer width="100%" height={280}>
         <LineChart data={data}>
-          <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,.08)" />
-          <XAxis dataKey="timestamp" stroke="#9aa8a1" hide />
-          <YAxis stroke="#9aa8a1" />
+          <CartesianGrid strokeDasharray="3 3" stroke="rgba(255, 255, 255, .08)" />
+          <XAxis dataKey="timestamp" stroke="#4c72a8" hide />
+          <YAxis stroke="#4c72a8" />
           <Tooltip />
           {lines.map((line, index) => (
             <Line
               key={line}
               type="monotone"
               dataKey={line}
-              stroke={colors[index] || "#20df98"}
+              stroke={colors[index] || "#398cff"}
               strokeWidth={3}
               dot={false}
               activeDot={{ r: 5 }}

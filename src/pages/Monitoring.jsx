@@ -178,7 +178,7 @@ export default function MonitoringPage({ data = {} }) {
       }
     } catch (error) {
       console.warn(
-        "Browser fullscreen was blocked, but CrowdVision presentation mode is still open.",
+        "Browser fullscreen was blocked, but CrowdDetection System presentation mode is still open.",
         error
       );
     }
@@ -304,7 +304,7 @@ export default function MonitoringPage({ data = {} }) {
           <div className={`live-frame-shell ${streamLive ? "is-live" : "is-paused"}`}>
             <img
               src={VIDEO_STREAM_URL}
-              alt="CrowdVision live video stream"
+              alt="CrowdDetection System live video stream"
               className="live-feed monitor-feed monitoring-stream-img"
               loading="eager"
               decoding="async"
@@ -329,16 +329,16 @@ export default function MonitoringPage({ data = {} }) {
           </div>
 
           <div className="operator-status-strip">
-            <StatusItem label="Source" value={currentSourceLabel} tone="cyan" />
-            <StatusItem label="People" value={peopleCount} tone="green" />
-            <StatusItem label="Occupancy" value={occupancy} tone="yellow" />
+            <StatusItem label="Source" value={currentSourceLabel} tone="#3478F6" />
+            <StatusItem label="People" value={peopleCount} tone="#3478F6" />
+            <StatusItem label="Occupancy" value={occupancy} tone="#3478F6" />
             <StatusItem label="Density" value={latestDensity} tone={densityTone} />
             <StatusItem label="FPS" value={displayNumber(fps, 1)} />
             <StatusItem label="AI FPS" value={displayNumber(aiFps, 2)} />
             <StatusItem
               label="Integrity"
               value={cameraIntegrity?.tamper_detected ? "Warning" : (cameraIntegrity?.signal_quality || "Good")}
-              tone={cameraIntegrity?.tamper_detected ? "yellow" : "green"}
+              tone={cameraIntegrity?.tamper_detected ? "#3478F6" : "#3478F6"}
             />
           </div>
         </div>
@@ -430,11 +430,11 @@ export default function MonitoringPage({ data = {} }) {
             <h2>Person Intelligence</h2>
 
             <div className="tracking-metric-grid">
-              <TrackingMetric label="Unique Seen" value={sessionUniquePeople} tone="green" />
-              <TrackingMetric label="Active Now" value={activeTracks} tone="cyan" />
+              <TrackingMetric label="Unique Seen" value={sessionUniquePeople} tone="#3478F6" />
+              <TrackingMetric label="Active Now" value={activeTracks} tone="#3478F6" />
               <TrackingMetric label="Memory" value={memoryTracks} />
-              <TrackingMetric label="Re-ID" value={reidentifiedPeople} tone="yellow" />
-              <TrackingMetric label="Duplicates Blocked" value={duplicatesPrevented} tone="yellow" />
+              <TrackingMetric label="Re-ID" value={reidentifiedPeople} tone="#3478F6" />
+              <TrackingMetric label="Duplicates Blocked" value={duplicatesPrevented} tone="#3478F6" />
               <TrackingMetric label="Continuity" value={rawContinuity} />
             </div>
 
@@ -520,11 +520,11 @@ export default function MonitoringPage({ data = {} }) {
             className={`monitoring-presentation-overlay video-only-presentation ${streamLive ? "is-live" : "is-paused"} mode-${presentationMode} fit-${presentationFit}`}
             role="dialog"
             aria-modal="true"
-            aria-label="CrowdVision fullscreen monitoring presentation"
+            aria-label="CrowdDetection System fullscreen monitoring presentation"
           >
             <img
               src={VIDEO_STREAM_URL}
-              alt="CrowdVision fullscreen live monitoring"
+              alt="CrowdDetection System fullscreen live monitoring"
               className="presentation-video-only-feed"
               loading="eager"
               decoding="async"

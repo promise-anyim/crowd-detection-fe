@@ -91,10 +91,10 @@ function CameraNetworkSummary() {
       </div>
 
       <div className="camera-network-summary-metrics">
-        <CameraNetworkMetric label="Registered Cameras" value={loading ? "…" : totalCameras} tone="cyan" />
-        <CameraNetworkMetric label="Connected Now" value={loading ? "…" : connectedCameras} tone="green" />
-        <CameraNetworkMetric label="Active Sessions" value={loading ? "…" : activeSessions} tone="purple" />
-        <CameraNetworkMetric label="Camera Warnings" value={loading ? "…" : activeWarnings} tone={activeWarnings ? "critical" : "green"} />
+        <CameraNetworkMetric label="Registered Cameras" value={loading ? "…" : totalCameras} tone="#3478F6" />
+        <CameraNetworkMetric label="Connected Now" value={loading ? "…" : connectedCameras} tone="#3478F6" />
+        <CameraNetworkMetric label="Active Sessions" value={loading ? "…" : activeSessions} tone="#3478F6" />
+        <CameraNetworkMetric label="Camera Warnings" value={loading ? "…" : activeWarnings} tone={activeWarnings ? "critical" : "#3478F6"} />
       </div>
 
       <div className="camera-network-summary-actions">
@@ -168,7 +168,7 @@ export default function DashboardPage({ data }) {
           />
           <img
             src={VIDEO_STREAM_URL}
-            alt="CrowdVision camera stream"
+            alt="CrowdDetection System camera stream"
             className={`live-feed ${monitoringRunning ? "" : "historical-frame"}`}
             loading="eager"
             decoding="async"
@@ -302,7 +302,7 @@ export default function DashboardPage({ data }) {
 
       <section className="content-grid">
         <ChartPanel title="Alert Distribution" type="bar" data={alertDistribution} />
-        <LinePanel title="Occupancy Trend" data={chartData} lines={["occupancy", "peak_occupancy"]} colors={["#76c80f", "#ff4d5f"]} />
+        <LinePanel title="Occupancy Trend" data={chartData} lines={["occupancy", "peak_occupancy"]} colors={["#65a5ff", "#4d97ff"]} />
       </section>
     </>
   );

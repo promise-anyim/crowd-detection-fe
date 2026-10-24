@@ -245,7 +245,7 @@ export default function EvidencePage({ data }) {
           {gallery.length === 0 && (
             <div className="empty-state ev37-empty-state">
               <h3>No evidence snapshots yet</h3>
-              <p>High and Critical evidence snapshots will appear here when CrowdVision captures them.</p>
+              <p>High and Critical evidence snapshots will appear here when CrowdDetection System captures them.</p>
             </div>
           )}
         </div>

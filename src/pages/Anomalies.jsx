@@ -26,8 +26,8 @@ export default function AnomaliesPage({ data }) {
 
       <section className="cards-grid">
         <StatCard label="Total Anomalies" value={anomalySummary?.total_anomalies ?? 0} variant="danger" />
-        <StatCard label="Highest Score" value={`${anomalySummary?.highest_anomaly_score ?? 0}%`} variant="cyan" />
-        <StatCard label="Latest Recorded Type" value={anomalySummary?.latest_anomaly_type ?? "Normal"} variant="cyan" />
+        <StatCard label="Highest Score" value={`${anomalySummary?.highest_anomaly_score ?? 0}%`} variant="#3478F6" />
+        <StatCard label="Latest Recorded Type" value={anomalySummary?.latest_anomaly_type ?? "Normal"} variant="#3478F6" />
         <StatCard label="Latest Recorded Zone" value={anomalySummary?.latest_anomaly_zone ?? "None"} />
       </section>
 

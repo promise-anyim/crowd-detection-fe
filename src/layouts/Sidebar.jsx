@@ -59,21 +59,21 @@ export default function Sidebar({
       className={`sidebar adaptive-sidebar ${
         compactMode ? "is-collapsed" : "is-expanded"
       } ${mobileOpen ? "is-mobile-open" : ""}`}
-      aria-label="CrowdVision primary navigation"
+      aria-label="CrowdDetection System primary navigation"
     >
       <div className="sidebar-top-row">
         <NavLink
           to="/"
           className="brand-block adaptive-brand"
-          aria-label="CrowdVision AI launch page"
-          title={compactMode ? "CrowdVision AI" : undefined}
+          aria-label="CrowdDetection System launch page"
+          title={compactMode ? "CrowdDetection System" : undefined}
           onClick={onNavigate}
         >
-          <div className="brand-mark">CV</div>
+          
 
           <div className="brand-copy">
-            <span className="brand-kicker">CrowdVision AI Platform</span>
-            <h2>CrowdVision AI</h2>
+            <span className="brand-kicker">CrowdDetection System Platform</span>
+            <h2>CrowdDetection System</h2>
             <p>Security Command</p>
           </div>
         </NavLink>

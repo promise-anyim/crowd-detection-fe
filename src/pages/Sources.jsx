@@ -313,7 +313,7 @@ function RemoteCameraNetwork({ fetchDashboardData }) {
   const [lastCameraUpdate, setLastCameraUpdate] = useState("");
   const [operationMessage, setOperationMessage] = useState("");
   const [busyAction, setBusyAction] = useState("");
-  const [previewTick, setPreviewTick] = useState(Date.now());
+  const [previewTick, setPreviewTick] = useState(0);
   const [selectedCamera, setSelectedCamera] = useState(null);
 
   async function fetchCameraStatus() {
@@ -414,10 +414,13 @@ function RemoteCameraNetwork({ fetchDashboardData }) {
   }
 
   useEffect(() => {
-    fetchCameraStatus();
-
+    const initialFetch = setTimeout(() => fetchCameraStatus(), 0);
     const interval = setInterval(fetchCameraStatus, CAMERA_REFRESH_MS);
-    return () => clearInterval(interval);
+
+    return () => {
+      clearTimeout(initialFetch);
+      clearInterval(interval);
+    };
   }, []);
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import StatCard from "../components/common/StatCard";
 import Badge from "../components/common/Badge";
 import SectionHead from "../components/common/SectionHead";
@@ -29,7 +29,7 @@ export default function IncidentsPage({ data }) {
   const monitoringRunning = Boolean(engineStatus?.running);
   const hasActiveIncident = monitoringRunning && Boolean(latestIncident);
 
-  async function fetchIncidentHistory(targetPage = page) {
+  const fetchIncidentHistory = useCallback(async (targetPage = 1) => {
     try {
       setLoading(true);
       setError("");
@@ -58,11 +58,12 @@ export default function IncidentsPage({ data }) {
     } finally {
       setLoading(false);
     }
-  }
+  }, [densityFilter, sourceFilter]);
 
   useEffect(() => {
-    fetchIncidentHistory(1);
-  }, [densityFilter, sourceFilter]);
+    const initialFetch = setTimeout(() => fetchIncidentHistory(1), 0);
+    return () => clearTimeout(initialFetch);
+  }, [fetchIncidentHistory]);
 
   async function refreshAll() {
     await Promise.all([

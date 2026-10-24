@@ -123,9 +123,13 @@ export default function AuditPage() {
   }
 
   useEffect(() => {
-    fetchAuditData();
+    const initialFetch = setTimeout(() => fetchAuditData(), 0);
     const interval = setInterval(() => fetchAuditData(), 20000);
-    return () => clearInterval(interval);
+
+    return () => {
+      clearTimeout(initialFetch);
+      clearInterval(interval);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

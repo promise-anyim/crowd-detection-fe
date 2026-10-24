@@ -102,7 +102,11 @@ export default function MainLayout({
   }, [sidebarCollapsed, mobileNavigation]);
 
   useEffect(() => {
-    setMobileNavigationOpen(false);
+    const closeTimer = window.setTimeout(() => {
+      setMobileNavigationOpen(false);
+    }, 0);
+  
+    return () => window.clearTimeout(closeTimer);
   }, [location.pathname]);
 
   useEffect(() => {

@@ -52,9 +52,13 @@ function CameraNetworkSummary() {
   }
 
   useEffect(() => {
-    fetchNetworkStatus();
+    const initialFetch = setTimeout(() => fetchNetworkStatus(), 0);
     const interval = setInterval(fetchNetworkStatus, CAMERA_NETWORK_REFRESH_MS);
-    return () => clearInterval(interval);
+
+    return () => {
+      clearTimeout(initialFetch);
+      clearInterval(interval);
+    };
   }, []);
 
   const cameras = useMemo(

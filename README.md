@@ -26,8 +26,8 @@ The following screenshots show the CrowdVision AI interface from different views
 
 ## Project repositories
 
-- **Frontend:** [crowdvision-frontend](https://github.com/refino17/crowdvision-frontend)
-- **Backend:** [crowdvision-backend](https://github.com/refino17/crowdvision-backend)
+- **Frontend:** [crowdvision-frontend](https://github.com/promise-anyim/crowd-detection-fe)
+- **Backend:** [crowdvision-backend](https://github.com/promise-anyim/crowd-detection-system-be)
 
 ## Overview
 
@@ -83,12 +83,12 @@ The frontend and backend are maintained in separate GitHub repositories and run 
 
 - Node.js version compatible with Vite 8.
 - npm.
-- The [CrowdVision AI backend](https://github.com/refino17/crowdvision-backend) running locally.
+- The [CrowdVision AI backend](https://github.com/promise-anyim/crowd-detection-system-be) running locally.
 
 ### 1. Clone the frontend
 
 ```bash
-git clone https://github.com/refino17/crowdvision-frontend.git
+git clone https://github.com/promise-anyim/crowd-detection-fe
 cd crowdvision-frontend
 ```
 
@@ -178,7 +178,7 @@ The current implementation uses browser `fetch()` requests in the application an
 
 ## Related project
 
-The API and computer-vision services are documented in the [CrowdVision AI Backend repository](https://github.com/refino17/crowdvision-backend).
+The API and computer-vision services are documented in the [CrowdVision AI Backend repository](https://github.com/promise-anyim/crowd-detection-system-be).
 
 ## Live Demo
 

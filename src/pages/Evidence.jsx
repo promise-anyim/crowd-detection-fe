@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import SectionHead from "../components/common/SectionHead";
 import "../styles/evidence-v37.css";
@@ -139,23 +139,23 @@ export default function EvidencePage({ data }) {
     setSelectedIndex(index);
   }
 
-  function closeLightbox() {
+  const closeLightbox = useCallback(() => {
     setSelectedIndex(null);
-  }
+  }, []);
 
-  function showPrevious() {
+  const showPrevious = useCallback(() => {
     setSelectedIndex((current) => {
       if (current === null || gallery.length < 1) return current;
       return current === 0 ? gallery.length - 1 : current - 1;
     });
-  }
+  }, [gallery.length]);
 
-  function showNext() {
+  const showNext = useCallback(() => {
     setSelectedIndex((current) => {
       if (current === null || gallery.length < 1) return current;
       return current === gallery.length - 1 ? 0 : current + 1;
     });
-  }
+  }, [gallery.length]);
 
   useEffect(() => {
     if (selectedIndex === null) return undefined;
@@ -174,7 +174,7 @@ export default function EvidencePage({ data }) {
       document.body.classList.remove("ev37-modal-open");
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [selectedIndex, gallery.length]);
+  }, [selectedIndex, gallery.length, closeLightbox, showPrevious, showNext]);
 
   const criticalCount = gallery.filter((item) => levelFromFilename(item.filename) === "Critical").length;
   const highCount = gallery.filter((item) => levelFromFilename(item.filename) === "High").length;

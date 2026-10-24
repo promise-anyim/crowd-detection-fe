@@ -214,9 +214,14 @@ export default function ReportsPage({ data }) {
   useEffect(() => {
     if (!sortedReports.length) return;
     if (previewFilename && sortedReports.some((report) => report.filename === previewFilename)) return;
+
     const firstReport = sortedReports[0];
-    setPreviewFilename(firstReport.filename);
-    openReport(firstReport.filename);
+    const previewTimer = setTimeout(() => {
+      setPreviewFilename(firstReport.filename);
+      openReport(firstReport.filename);
+    }, 0);
+
+    return () => clearTimeout(previewTimer);
   }, [sortedReports, previewFilename, openReport]);
 
   const filteredReports = useMemo(() => {
